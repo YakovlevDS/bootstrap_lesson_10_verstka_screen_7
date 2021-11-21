@@ -254,6 +254,9 @@ h4{
 
 
 
+
+/* =============================adaptive============================== */
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 	
@@ -266,6 +269,19 @@ h4{
 	}
 	section{
 		padding: 50px 0;
+	}
+	.section-reviews h3,
+	.section-reviews h4{
+		font-size: 25px;
+	}
+	.section-reviews .blockquote{
+		font-size: 17px;
+		padding-left: 20px;
+		margin-top: 40px;
+	}
+	.section-reviews .blockquote::before{
+		font-size: 100px;
+		top: -40px;
 	}
 }
 
@@ -310,6 +326,14 @@ h4{
 	.btn-shadow{
 		box-shadow: 0 5px 0 #ff5990;
 		padding: 10px 15px;
+	}
+}
+
+@media only screen and (max-width : 576px) {
+	.section-reviews .carousel-caption{
+		position: static;
+		width: 70%;
+		margin: auto;
 	}
 }
 
